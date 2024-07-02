@@ -12,10 +12,10 @@ public class MathClient
            ans= m1.add(a,b);
           System.out.println("Addition is"+ans);
 }
-   catch(Exception ae)	
+   catch(Exception e)	
 
     {
-        System.out.println(ae);
+        System.out.println(e);
          
     }
       
