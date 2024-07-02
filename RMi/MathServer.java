@@ -7,14 +7,16 @@ public class MathServer
       try
      
    {   
-      
-     Maths obj = news MathsOper();
-     LocateRegistry.createRegistry(1900);
+      System.out.println("server Started.....");
+ 	//create an objectof the interface implementation class   
+	Maths obj = new MathsOpr();
+      //rmiregidtry within the server JVM with port number 1900
+	LocateRegistry.createRegistry(1900);
      Naming.rebind("rmi://localhost:1900"+"/jnec",obj);
   }
-    catch(Exception e)
+    catch(Exception ae)
     {
-        System.out.println(e);
+        System.out.println(ae);
          
     }
       
