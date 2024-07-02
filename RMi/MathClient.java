@@ -5,7 +5,7 @@ public class MathClient
    public static void main(String args[]) 
     {
       int a=10,b=20,ans;
-     
+      try
    {   
       
      Maths m1 = (Maths)Naming.lookup("rmi://localhost:1900"+"/jnec");
